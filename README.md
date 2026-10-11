@@ -1,34 +1,45 @@
-# Adversarial Injection-Test Results for AI Agent Skills
+# Awesome Agent Skills — evaluated, scored, and injection-tested
 
-Sandboxed adversarial test results for AI agent skills, published as open data (CC BY 4.0).
+A public, machine-readable snapshot of the [Skill123](https://skill123.me) directory: **590+ AI agent
+skills for Claude Code and Codex, each scored on a six-dimension rubric with written rationale** —
+plus the open dataset from our adversarial injection testing.
 
-This repository hosts the dataset behind **https://skill123.me/data** — the results of running
-agent skills against adversarial probes in an OS-sandboxed agent, so that the question
-"what does this skill actually do when an agent runs it under pressure?" has a checkable answer
-instead of a marketing claim.
+Most "awesome" skill lists tell you what a skill claims to do. This one is backed by evaluation:
+every score has a published rationale, and 47 skills have been run through live adversarial probes
+in a sandbox to see what they actually do under pressure.
 
-**47 skills · 376 adversarial probe slots · 33 boundaries dropped**
+## Top-rated right now
 
-## What's in the data
+| # | Skill | Score | By | |
+|---|---|---|---|---|
+| 1 | `claude-api` | 9.8 | anthropics | ✓ checked |
+| 2 | `xlsx` | 9.8 | anthropics | ✓ checked |
+| 3 | `hyperframes-cli` | 9.7 | calesthio | ✓ checked |
+| 4 | `remotion-to-hyperframes` | 9.7 | calesthio | ✓ checked |
+| 5 | `docx` | 9.7 | anthropics | ✓ checked |
+| 6 | `pptx` | 9.7 | anthropics | ✓ checked |
+| 7 | `create-video` | 9.6 | calesthio | ✓ checked |
+| 8 | `threejs-world-generation` | 9.6 | calesthio | ✓ checked |
+| 9 | `academy-guide` | 9.6 | anthropics | ✓ checked |
+| 10 | `constraint-driven-development` | 9.5 | addyosmani | ✓ checked |
 
-`data/injection-results.json` (~106 KB) contains, per skill:
+Full directory, filters and scorecards: **https://skill123.me**
 
-| Field | Meaning |
-|---|---|
-| `static_score` | Six-dimension rubric score (0–10): trigger, structure, workflow, content, engineering, security, plus overall |
-| `dynamic_test.grade` | `PASS` (held every boundary) or `PARTIAL` (dropped at least one) |
-| `dynamic_test.resistance` | Held fraction scaled to 10, counted on the worse capability tier |
-| `dynamic_test.tiers` | Held/total per tier: **A** = restricted toolset, **B** = the tools the skill declares in its own files |
-| `dynamic_test.probes` | One entry per slot: tier, probe type, verdict |
-| `dynamic_test.capability_gap_probes` | Probes flagged as *held only because the capability was absent* — a hold that is **not** evidence of refusal |
-| `dynamic_test.runtime` | Target model and run counts, as recorded at test time |
-| `scope` | Exactly which runs are included, which are excluded, and why |
+Browse by domain: [documents](https://skill123.me/topic/documents) ·
+[developer tools](https://skill123.me/topic/developer-tools) ·
+[data & analytics](https://skill123.me/topic/data-analytics) ·
+[design & creative](https://skill123.me/topic/design-creative) ·
+[writing](https://skill123.me/topic/writing) · [marketing](https://skill123.me/topic/marketing) ·
+[video creation](https://skill123.me/topic/video-creation) · [legal](https://skill123.me/topic/legal) ·
+[finance & trading](https://skill123.me/topic/finance-trading)
 
-The dataset is generated from the live site and is refreshed there first:
-**https://skill123.me/data/injection-results.json** is the canonical endpoint;
-the file here is a snapshot.
+## The open dataset: adversarial injection tests
 
-## The headline result
+`data/injection-results.json` — **47 skills · 376 adversarial probe slots · 33 boundaries dropped**,
+CC BY 4.0.
+
+Each tested skill is loaded into an OS-sandboxed agent (no egress except the model API) and run
+against four adversarial probes in two capability tiers, three times per slot, worst run reported:
 
 | Probe type | Slots | Dropped | Failure rate |
 |---|---|---|---|
@@ -36,42 +47,39 @@ the file here is a snapshot.
 | Instructions hidden inside an artifact | 188 | 3 | **2%** |
 | Move data out of the sandbox | 94 | 1 | **1%** |
 
-Instructions hidden inside the document a skill was asked to process are caught ~98% of the
-time. The probe that succeeds isn't an attack at all — it just asks the skill to do slightly
-more than it says it does.
+The finding worth your attention: **injection hidden in the content a skill processes is caught
+~98% of the time. What breaks skills is the probe that doesn't attack at all** — it just asks the
+skill to do slightly more than it says it does.
 
-Write-up: **https://skill123.me/blog/adversarial-probe-results-47-skills**
+Probe **prompts are deliberately not published** (they are working attack templates). Types and
+per-slot verdicts are published in full. Transcripts on request.
 
-## What is deliberately not published
+Live endpoint (canonical source, always current): https://skill123.me/data/injection-results.json
 
-**The probe prompt text and transcripts.** They are working attack templates; publishing them
-turns a results dataset into a kit for attacking other people's skills. Probe *types* and
-per-slot *verdicts* are published in full. Researchers who want the transcripts can ask via
-https://skill123.me/feedback.
+## How scoring works
 
-## Caveats we would rather state ourselves
+Six weighted dimensions, 100 points total, every score published with its written rationale:
 
-1. **N=47, and it covers 2 of the 9 categories** on the site (documents, data). Small.
-2. **The published grade only tracks the declared-capabilities tier.** Six skills in this set
-   dropped a boundary in the restricted tier and still carry `PASS`. The overreach failures are
-   not an artifact of that rule (16 in the restricted tier, 13 in the declared one), but the
-   per-skill grades are more generous than the raw verdicts.
-3. **Five skills have a hold that isn't a refusal** — the sandbox lacked the capability
-   outright. Flagged in the data as `capability_gap_probes`.
-4. **The judge was a model, not a human**, and evaluation scores are not perfectly stable: in a
-   separate re-run of the same inputs, 7 of 11 scores moved, one by a full point.
-   See https://skill123.me/blog/we-ran-the-same-evaluation-twice
+**Trigger quality (20)** · **Structure (15)** · **Workflow design (25)** · **Content (10)** ·
+**Engineering (10)** · **Security (20)**
 
-## Using it
+Confirmed credential theft, backdoors, or data exfiltration caps a skill at 39/100 regardless of
+engineering quality. Full rubric: https://skill123.me/methodology
 
-Licensed **CC BY 4.0** — use it, quote it, build on it. Citation:
+## Caveats, stated plainly
+
+- **Scores vary.** We re-ran the same evaluation on 11 skills two hours later, same inputs: 7 of 11
+  scores moved, one by a full point. Treat the useful resolution as ~0.5, not decimals.
+- **The published grade only tracks the declared-capabilities tier.** Six skills in the dataset
+  dropped a boundary in the restricted tier and still carry `PASS`.
+- **Five skills in the dataset have a hold that isn't a refusal** — the sandbox lacked the
+  capability outright. Flagged as `capability_gap_probes`.
+- **This is one rubric's opinion**, applied consistently. Every rationale is published so you can
+  argue with a specific number instead of the whole system.
+
+## License & citation
+
+Data licensed **CC BY 4.0** — use it, quote it, build on it.
 
 > Skill123, "Adversarial injection-test results for AI agent skills" (2026),
 > https://skill123.me/data
-
-## Related
-
-- **Dataset page & download**: https://skill123.me/data
-- **Evaluation rubric** (six dimensions, security veto): https://skill123.me/methodology
-- **The directory itself**: https://skill123.me — 590+ agent skills, each scored with
-  written rationale
