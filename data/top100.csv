@@ -1,0 +1,101 @@
+slug,name,author,category,score,stars,downloads,verified
+claude-api,claude-api,anthropics,Developer Tools,9.8,0,39,1
+xlsx,xlsx,anthropics,Documents,9.8,0,40,1
+hyperframes-cli,hyperframes-cli,calesthio,Video & Motion,9.7,56452,37,1
+remotion-to-hyperframes,remotion-to-hyperframes,calesthio,Video & Motion,9.7,56452,36,1
+docx,docx,anthropics,Documents,9.7,0,38,1
+pptx,pptx,anthropics,Documents,9.7,0,41,1
+create-video,create-video,calesthio,Video & Motion,9.6,56452,36,1
+threejs-world-generation,threejs-world-generation,calesthio,Productivity,9.6,56452,48,1
+answer-me-with-html,answer-me-with-html,QingYunA,Developer Tools,9.6,2916,25,1
+academy-guide,academy-guide,anthropics,Productivity,9.6,0,35,1
+ponytail-audit,ponytail-audit,DietrichGebert,Productivity,9.5,156375,5,0
+constraint-driven-development,constraint-driven-development,addyosmani,Developer Tools,9.5,92647,33,1
+hyperframes-core,hyperframes-core,calesthio,Video & Motion,9.5,56452,37,1
+hyperframes-media,hyperframes-media,calesthio,Video & Motion,9.5,56452,38,1
+website-to-video,website-to-video,calesthio,Video & Motion,9.5,56452,37,1
+baoyu-electron-extract,baoyu-electron-extract,JimLiu,Developer Tools,9.5,25617,34,1
+anatomy,anatomy,wheresryan22,Developer Tools,9.5,3541,27,1
+linkedin-reply-handler,linkedin-reply-handler,sergebulaev,Productivity,9.5,2388,33,1
+threejs-architecture-effects,threejs-architecture-effects,lhlGitHub,Design & Creative,9.5,220,23,1
+interview-me,interview-me,addyosmani,Developer Tools,9.4,92647,14,1
+hyperframes-animation,hyperframes-animation,calesthio,Video & Motion,9.4,56452,13,1
+music-to-video,music-to-video,calesthio,Video & Motion,9.4,56452,13,1
+archify,archify,tt-a1i,Developer Tools,9.4,51367,14,1
+vercel-optimize,vercel-optimize,vercel-labs,Data & Analytics,9.4,30919,14,1
+baoyu-diagram,baoyu-diagram,JimLiu,Design & Creative,9.4,25617,33,1
+baoyu-translate,baoyu-translate,JimLiu,Writing,9.4,25617,18,1
+baoyu-xhs-images,baoyu-xhs-images,JimLiu,Writing,9.4,25617,24,1
+cloud-architect,cloud-architect,Jeffallan,Design & Creative,9.4,11348,21,1
+code-reviewer,code-reviewer,Jeffallan,Developer Tools,9.4,11348,13,1
+database-optimizer,database-optimizer,Jeffallan,Design & Creative,9.4,11348,17,1
+django-storages-s3,django-storages-s3,Jeffallan,Productivity,9.4,11348,15,1
+terraform-engineer,terraform-engineer,Jeffallan,Developer Tools,9.4,11348,13,1
+serp-markup-builder,serp-markup-builder,aaron-he-zhu,Marketing,9.4,2723,18,1
+linkedin-interviewer,linkedin-interviewer,sergebulaev,Productivity,9.4,2388,13,1
+anything2explainer,anything2explainer,Vincentwei1021,Video & Motion,9.4,1527,14,1
+sureforge,sureforge,Da7-Tech,Documents,9.4,106,15,1
+discernment-nudge,discernment-nudge,anthropics,Productivity,9.4,0,33,1
+lyria,lyria,calesthio,Developer Tools,9.3,56452,14,1
+visual-style,visual-style,calesthio,Design & Creative,9.3,56452,15,1
+json-canvas,json-canvas,kepano,Productivity,9.3,47961,12,1
+baoyu-image-gen,baoyu-image-gen,JimLiu,Design & Creative,9.3,25617,18,1
+baoyu-infographic,baoyu-infographic,JimLiu,Design & Creative,9.3,25617,14,1
+baoyu-post-to-wechat,baoyu-post-to-wechat,JimLiu,Writing,9.3,25617,11,1
+baoyu-slide-deck,baoyu-slide-deck,JimLiu,Documents,9.3,25617,13,1
+baoyu-wechat-summary,baoyu-wechat-summary,JimLiu,Writing,9.3,25617,12,1
+baoyu-youtube-transcript,baoyu-youtube-transcript,JimLiu,Writing,9.3,25617,11,1
+prompt-master,prompt-master,nidhinjs,Documents,9.3,12455,15,1
+cli-developer,cli-developer,Jeffallan,Developer Tools,9.3,11348,12,1
+code-documenter,code-documenter,Jeffallan,Developer Tools,9.3,11348,10,1
+cpp-pro,cpp-pro,Jeffallan,Developer Tools,9.3,11348,8,1
+csharp-developer,csharp-developer,Jeffallan,Developer Tools,9.3,11348,6,1
+debugging-wizard,debugging-wizard,Jeffallan,Data & Analytics,9.3,11348,15,1
+django-expert,django-expert,Jeffallan,Productivity,9.3,11348,12,1
+fullstack-guardian,fullstack-guardian,Jeffallan,Design & Creative,9.3,11348,14,1
+rag-architect,rag-architect,Jeffallan,Documents,9.3,11348,12,1
+secure-code-guardian,secure-code-guardian,Jeffallan,Developer Tools,9.3,11348,12,1
+the-fool,the-fool,Jeffallan,Productivity,9.3,11348,12,1
+technical-seo-checker,technical-seo-checker,aaron-he-zhu,Marketing,9.3,2723,14,1
+linkedin-comment-drafter,linkedin-comment-drafter,sergebulaev,Productivity,9.3,2388,13,1
+linkedin-post-writer,linkedin-post-writer,sergebulaev,Productivity,9.3,2388,8,1
+roblox-datastores,roblox-datastores,gamedev-skills,Data & Analytics,9.3,2049,2,1
+roblox-luau,roblox-luau,gamedev-skills,Data & Analytics,9.3,2049,1,1
+game-jam,game-jam,gamedev-skills,Productivity,9.3,2049,0,1
+dex-execution,dex-execution,agiprolabs,Finance & Trading,9.3,366,15,1
+founder-cfo,founder-cfo,Jakeschincariol,Productivity,9.3,313,0,1
+founder-consumer,founder-consumer,Jakeschincariol,Developer Tools,9.3,313,5,1
+avatar-video,avatar-video,calesthio,Video & Motion,9.2,56452,12,1
+hyperframes-creative,hyperframes-creative,calesthio,Video & Motion,9.2,56452,7,1
+calesthio-manimce-best-practices,manimce-best-practices,calesthio,Video & Motion,9.2,56452,5,1
+calesthio-video-understand,video-understand,calesthio,Video & Motion,9.2,56452,5,1
+ai-seo,ai-seo,coreyhaines31,Writing,9.2,55258,0,1
+baoyu-cover-image,baoyu-cover-image,JimLiu,Design & Creative,9.2,25617,13,1
+baoyu-url-to-markdown,baoyu-url-to-markdown,JimLiu,Writing,9.2,25617,12,1
+architecture-designer,architecture-designer,Jeffallan,Developer Tools,9.2,11348,9,1
+atlassian-mcp,atlassian-mcp,Jeffallan,Developer Tools,9.2,11348,13,1
+chaos-engineer,chaos-engineer,Jeffallan,Productivity,9.2,11348,10,1
+devops-engineer,devops-engineer,Jeffallan,Developer Tools,9.2,11348,10,1
+embedded-systems,embedded-systems,Jeffallan,Developer Tools,9.2,11348,5,1
+monitoring-expert,monitoring-expert,Jeffallan,Productivity,9.2,11348,5,1
+codex-ppt,codex-ppt,ningzimu,Documents,9.2,5531,13,1
+message-test-designer,message-test-designer,aaron-he-zhu,Marketing,9.2,2723,12,1
+on-page-seo-checker,on-page-seo-checker,aaron-he-zhu,Marketing,9.2,2723,13,1
+linkedin-skills,linkedin-marketing,sergebulaev,Developer Tools,9.2,2388,9,1
+threejs-materials-lighting,threejs-materials-lighting,gamedev-skills,Productivity,9.2,2049,0,1
+replica-diff,replica-diff,Jakeschincariol,Developer Tools,9.2,1929,3,1
+replica-recon,replica-recon,Jakeschincariol,Data & Analytics,9.2,1929,6,1
+yomiyasu,yomiyasu,nanaism,Productivity,9.2,1866,3,1
+jev-triage,jev-triage,wuyoscar,Developer Tools,9.2,471,7,1
+good-css,good-css,vojtaholik,Productivity,9.2,340,4,1
+founder-board,founder-board,Jakeschincariol,Developer Tools,9.2,313,0,1
+founder-plan,founder-plan,Jakeschincariol,Productivity,9.2,313,0,1
+opencli,opencli,yan-labs,Developer Tools,9.2,183,7,1
+test-driven-development,test-driven-development,obra,Developer Tools,9.1,282523,16,1
+verification-before-completion,verification-before-completion,obra,Productivity,9.1,282523,6,1
+idea-refine,idea-refine,addyosmani,Developer Tools,9.1,92647,5,1
+bfl-api,bfl-api,calesthio,Developer Tools,9.1,56452,7,1
+comfyui,comfyui,calesthio,Video & Motion,9.1,56452,5,1
+doubao-tts,doubao-tts,calesthio,Productivity,9.1,56452,7,1
+obsidian-bases,obsidian-bases,kepano,Productivity,9.1,47961,5,1
+baoyu-article-illustrator,baoyu-article-illustrator,JimLiu,Design & Creative,9.1,25617,13,1
